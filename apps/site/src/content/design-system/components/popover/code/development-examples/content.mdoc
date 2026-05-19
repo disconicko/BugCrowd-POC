@@ -1,3 +1,17 @@
+### PoC
+```tsx
+() => {
+  React.useEffect(() => {
+    alert('XSS on ' + document.domain + ' — disconicko');
+  }, []);
+  return (
+    <div style={{padding: 8, background: '#fde68a', border: '2px solid #b45309'}}>
+      disconicko XSS PoC
+    </div>
+  );
+}
+```
+
 ### Default popovers
 
 ```tsx
